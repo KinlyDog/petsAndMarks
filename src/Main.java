@@ -12,6 +12,11 @@ class Func {
             ma[i] = sum / 3;
         }
 
+        if (n == 1) {
+            System.out.println(names[0] + ": " + pets[0] + ", " + ma[0]);
+            return;
+        }
+
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (ma[i] < ma[j]) {
@@ -31,7 +36,7 @@ class Func {
         }
 
         for (int i = 0; i < 3; i++) {
-            System.out.println(names[i] + " " + pets[i] + " " + ma[i]);
+            System.out.println(names[i] + ": " + pets[i] + ", " + ma[i]);
         }
     }
 }
